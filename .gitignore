@@ -1,0 +1,13 @@
+# Ignore all
+*
+
+# Unignore directories
+!*/
+
+
+# Unignore source code files and txt
+!.gitignore
+!.cpp
+!.h
+!.txt
+!**.docx
