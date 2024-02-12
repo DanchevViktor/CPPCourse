@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include"pugixml.h"
-#include <exception>
 #include"Employee.h"
 #include"EmployeesWorkstations.h"
 #include "WorkStation.h"
