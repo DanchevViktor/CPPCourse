@@ -1,3 +1,2 @@
-﻿//#pragma once
-//6.Напишете функция която рисува празен правоъгълник с подадена дебелина на линиите. 
-//(ПОЯСНЕНИЕ: може да стане с помощта 2 запълнени правоъгълника);
+﻿#pragma once
+//6.Write a function that draws an empty rectangle with given line thickness.
