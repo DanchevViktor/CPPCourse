@@ -86,14 +86,13 @@ void Game::handleEvents() {
 		switch (event.type) {
 		case SDL_QUIT: running = false; break;
 		case SDL_MOUSEBUTTONDOWN: {
-			//std::cout << "mouse button down\n";
+
 			if (event.button.button == SDL_BUTTON_LEFT) {
 				int ww, wh;
 				SDL_GetWindowSize(window, &ww, &wh);
 				int msx, msy;
 				SDL_GetMouseState(&msx, &msy);
 
-				//std::cout << "mouse button left\n";
 
 				int quadrantWidth = ww / 2;
 				int quadrantHeight = wh / 2;
