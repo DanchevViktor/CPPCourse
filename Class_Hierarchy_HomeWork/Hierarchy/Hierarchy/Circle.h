@@ -1,0 +1,12 @@
+#pragma once
+#include "Shape.h"
+
+class Circle:public Shape
+{
+public:
+	void draw() const override {
+		cout << "Drawing circle" << endl;
+	}
+
+};
+
