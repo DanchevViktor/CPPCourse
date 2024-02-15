@@ -1,8 +1,5 @@
 #pragma once
-#include<SDL.h>
-#include<SDL_image.h>
-#include<iostream>
-using namespace std;
+#include <SDL.h>
 
 class Game {
 public:
@@ -14,11 +11,10 @@ public:
 	void handleEvents();
 	void clean();
 	bool isRunning();
+
 private:
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 	bool running;
-
-	int currentFrame;
 
 };
