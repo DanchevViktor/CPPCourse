@@ -2,7 +2,7 @@
 
 Circle::Circle(string color) :Shape(color) {};
 
-void Circle::draw()
+void Circle::draw() const
 {
 	cout << "Drawing a " << m_color << " circle" << endl;
 }

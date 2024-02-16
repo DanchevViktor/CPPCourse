@@ -6,6 +6,6 @@ class Circle:public Shape
 public:
 	Circle(string);
 
-	void draw() override;
+	void draw()const override ;
 };
 

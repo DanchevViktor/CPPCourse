@@ -7,8 +7,7 @@ class Shape
 public:
 	Shape(string);
 
-	virtual void draw();
-	virtual ~Shape();
+	virtual void draw() const;
 
 protected:
 	string m_color;

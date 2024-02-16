@@ -5,6 +5,6 @@ class Rectangle:public Shape
 public:
 	Rectangle(string);
 
-	void draw() override;
+	void draw()const  override;
 };
 
