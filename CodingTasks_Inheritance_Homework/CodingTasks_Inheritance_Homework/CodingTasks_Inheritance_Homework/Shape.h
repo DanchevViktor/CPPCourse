@@ -8,6 +8,7 @@ public:
 	Shape(string);
 
 	virtual void draw();
+	virtual ~Shape();
 
 protected:
 	string m_color;
