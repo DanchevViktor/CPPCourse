@@ -1,6 +1,6 @@
 #include "Circle.h"
 
-Circle::Circle(double radius) {
+Circle::Circle(string color,double radius):Shape(color) {
 	m_radius = radius;
 }
 
@@ -10,3 +10,6 @@ double Circle::area() {
 	return  3,14 * m_radius * m_radius;
 }
 
+void Circle::draw() {
+	cout << "Drawing from circle " << m_color << endl;
+}

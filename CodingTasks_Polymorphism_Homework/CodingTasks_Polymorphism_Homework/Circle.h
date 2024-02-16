@@ -6,10 +6,11 @@
 class Circle:public Shape
 {
 public:
-	Circle(double);
+	Circle(string,double);
 	double area() override;
+	void draw() override;
 	
-
+	
 private:
 	
 	double m_radius;

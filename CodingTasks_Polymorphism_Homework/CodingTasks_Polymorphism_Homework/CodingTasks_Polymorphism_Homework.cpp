@@ -4,18 +4,20 @@
 #include"Rectangle.h"
 
 void printArea(Shape* shape) {
-	cout << " Area of shape: " << shape->area() << endl;
+	cout << " Area : " << shape->area() << endl;
 
 }
 
 int main()
 {
-	Circle circle(10.0);
-	Rectangle rectangle(5, 4);
+	Circle circle("red",3.0);
+	Rectangle rectangle("blue",5, 4);
 
 	printArea(&circle);
 	printArea(&rectangle);
-
+	 
+	circle.draw();
+	rectangle.draw();
 
 	return 0;
 }

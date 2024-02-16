@@ -4,9 +4,10 @@
 class Rectangle:public Shape
 {
 public:
-	Rectangle(double, double);
+	Rectangle(string,double, double);
 
 	double area() override;
+	void draw();
 	
 
 private:
