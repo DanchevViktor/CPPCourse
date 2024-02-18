@@ -6,6 +6,7 @@ Game::Game()
     Game::renderer = NULL;
     Game::running = true;
     Game::currentFrame = 0;
+    Game::currentRow = 1;
 }
 
 Game::~Game()
@@ -51,25 +52,34 @@ void Game::render()
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // white color
     SDL_RenderClear(renderer);
 
+
+    
+    TextureManager::Instance()->drawOneFrameFromTexture("bird", spriteX, spriteY, 176, 178, currentRow, currentFrame, renderer);
+
+    
+
     SDL_RenderPresent(renderer);
 }
 
 void Game::update()
 {
+    
     int framesPerRow = 4;
     int numberOfFramesInSpriteSheet = 8;
-    int animationSpeed = 150;
-    currentFrame = int(((SDL_GetTicks() / animationSpeed) % numberOfFramesInSpriteSheet));
+    int animationSpeed = 200;
 
+    currentFrame = int(((SDL_GetTicks() / animationSpeed) % framesPerRow));
+    
     currentRow = currentFrame / framesPerRow;
-
-    if (currentFrame < framesPerRow) {
-        currentRow = 2;
+   
+    if (currentFrame > framesPerRow) {
+        currentRow = 2; 
+       
     }
-    else {
+    else{        
         currentRow = 1;
     }
-
+    
 }
 
 void Game::handleEvents()

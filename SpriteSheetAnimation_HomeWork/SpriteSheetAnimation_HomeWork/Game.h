@@ -22,5 +22,6 @@ private:
 	int currentFrame;
 	int spriteX = 0, spriteY = 0;
 	int currentRow;
+	
 
 };
